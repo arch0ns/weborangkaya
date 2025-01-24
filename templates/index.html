@@ -16,35 +16,86 @@
   <title>ES Pisang Ijo JMBD</title>
 
   <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="static/css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="../static/css/bootstrap.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css" />
 
   <!-- Custom styles -->
-  <link href="static/css/style.css" rel="stylesheet" />
+  <link href="../static/css/style.css" rel="stylesheet" />
   <!-- Responsive style -->
-  <link href="static/css/responsive.css" rel="stylesheet" />
+  <link href="../static/css/responsive.css" rel="stylesheet" />
+ <!-- bootstrap core css -->
+ <link rel="stylesheet" type="text/css" href="../static/css/bootstrap.css" />
+ <!--slick slider stylesheet -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css" />
+
+ <!-- fonts style -->
+ <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet" />
+ <!-- slick slider -->
+
+ <link rel="stylesheet" href="../static/css/slick-theme.css" />
+ <!-- font awesome style -->
+ <link href="../static/css/font-awesome.min.css" rel="stylesheet" />
+ <!-- Custom styles for this template -->
+ <link href="../static/css/style.css" rel="stylesheet" />
+ <!-- responsive style -->
+ <link href="../static/css/responsive.css" rel="stylesheet" />
 
 </head>
 
 <body>
   <div class="hero_area">
-    <!-- header section -->
-    <header class="header_section">
-      <div class="container">
-        <nav class="navbar navbar-expand-lg custom_nav-container">
-          <a class="navbar-brand" href="index.html">
-            <span>
-              ES Pisang Ijo JMBD
-            </span>
+<!-- header section strats -->
+<header class="header_section">
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg custom_nav-container ">
+      <a class="navbar-brand" href="index.html">
+        ES Pisang Ijo JMBD
+      </a>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class=""> </span>
+      </button>
+
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Beranda <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about"> Tentang</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/chocolate">Pisang Ijo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/testimonial">Testimoni</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">Kontak Kami</a>
+          </li>
+        </ul>
+        <div class="quote_btn-container">
+          <form class="form-inline">
+            <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+          </form>
+          <a href="">
+            <i class="fa fa-user" aria-hidden="true"></i>
           </a>
-        </nav>
+        </div>
       </div>
-    </header>
-    <!-- end header section -->
+    </nav>
+  </div>
+</header>
+<!-- end header section -->
 
     <!-- slider section -->
     <section class="slider_section">
       <div class="slider_bg_box">
-        <img src="static/images/slider-bg.png" alt="">
+        <img src="../static/images/slider-bg.png" alt="">
       </div>
       <div class="container">
         <div class="detail-box">
@@ -63,59 +114,114 @@
     <!-- end slider section -->
   </div>
 
-  <!-- products section -->
-  <section id="products" class="products_section">
-    <div class="container">
-      <div class="heading_container">
-        <h2>
-          Produk Kami
-        </h2>
-      </div>
-      <div class="row">
-        <!-- Produk 1 -->
-        <div class="col-md-4">
-          <div class="box">
-            <img src="static/images/pisang-ijo-coklat.png" alt="Pisang Ijo Rasa Klasik">
-            <h5>Pisang Ijo Rasa Klasik</h5>
-            <p>Harga: Rp 10.000</p>
-            <button onclick="addToCart('Pisang Ijo Klasik', 10000)">BELI SEKARANG</button>
+
+
+<!-- about section -->
+
+<section class="about_section layout_padding ">
+  <div class="container  ">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="detail-box">
+          <div class="heading_container">
+            <h2>
+              Tentang Kami
+            </h2>
           </div>
-        </div>
-        <!-- Produk 2 -->
-        <div class="col-md-4">
-          <div class="box">
-            <img src="static/images/pisang-ijo-keju.png" alt="Pisang Ijo Rasa Coklat">
-            <h5>Pisang Ijo Rasa Coklat</h5>
-            <p>Harga: Rp 12.000</p>
-            <button onclick="addToCart('Pisang Ijo Coklat', 12000)">BELI SEKARANG</button>
-          </div>
-        </div>
-        <!-- Produk 3 -->
-        <div class="col-md-4">
-          <div class="box">
-            <img src="static/images/pisang-ijo-klasik.png" alt="Pisang Ijo Rasa Keju">
-            <h5>Pisang Ijo Rasa Keju</h5>
-            <p>Harga: Rp 15.000</p>
-            <button onclick="addToCart('Pisang Ijo Keju', 15000)">BELI SEKARANG</button>
-          </div>
+          <p>
+            ES Pisang Ijo adalah salah satu kuliner tradisional khas Makassar yang terbuat dari pisang yang dibalut dengan adonan tepung hijau, disajikan dengan es serut, sirup manis, dan santan kental. Kami berkomitmen untuk menyajikan rasa yang lezat dan menyegarkan, dengan bahan-bahan berkualitas terbaik untuk memanjakan setiap lidah yang mencobanya.</p>
+          <a href="#">
+            <span>
+              Selengkapnya
+            </span>
+            <img src="../static/images/color-arrow.png" alt="">
+          </a>
         </div>
       </div>
-      <div class="btn-box">
-        <a href="checkout.html" class="btn btn-primary">Lanjut ke Checkout</a>
+      <div class="col-md-6">
+        <div class="img-box">
+          <img src="../static/images/about-img.png" alt="">
+        </div>
       </div>
     </div>
-  </section>
-  <!-- end products section -->
+  </div>
+</section>
 
-  <!-- footer section -->
-  <footer class="footer_section">
-    <div class="container">
+<!-- end about section -->
+
+
+
+<   <!-- chocolate section -->
+
+<section class="chocolate_section layout_padding">
+  <div class="container">
+    <div class="heading_container">
+      <h2>
+        Produk ES Pisang Ijo Kami
+      </h2>
       <p>
-        &copy; 2025 All Rights Reserved. Design by JMBD.
+        Nikmati berbagai varian ES Pisang Ijo yang lezat dan menyegarkan, disajikan dengan bahan-bahan terbaik.
       </p>
     </div>
-  </footer>
-  <!-- end footer section -->
+  </div>
+  <div class="container">
+    <div class="chocolate_container">
+      <div class="box">
+        <div class="img-box">
+          <img src="../static/images/pisang-ijo-klasik.png" alt="">
+        </div>
+        <div class="detail-box">
+          <h6>
+            ES Pisang Ijo <span>Rasa KONTOL</span>
+          </h6>
+          <h5>
+            Rp 50.000
+          </h5>
+          <button class="btn btn-primary" onclick="addToCart('Pisang Ijo KONTOL', 50000)">Tambahkan Keranjang</button>
+        </div>
+      </div>
+      <div class="box">
+        <div class="img-box">
+          <img src="../static/images/pisang-ijo-coklat.png" alt="">
+        </div>
+        <div class="detail-box">
+          <h6>
+            ES Pisang Ijo <span>Rasa MEMEK</span>
+          </h6>
+          <h5>
+            Rp 55.000
+          </h5>
+          <button class="btn btn-primary" onclick="addToCart('Pisang Ijo MEMEK', 55000)">Tambahkan Keranjang</button>
+
+        </div>
+      </div>
+      <div class="box">
+        <div class="img-box">
+          <img src="../static/images/pisang-ijo-keju.png" alt="">
+        </div>
+        <div class="detail-box">
+          <h6>
+            ES Pisang Ijo <span>Rasa JEMBUT</span>
+          </h6>
+          <h5>
+            Rp 60.000
+          </h5>
+          <button class="btn btn-primary" onclick="addToCart('Pisang Ijo JEMBUT', 60000)">Tambahkan Keranjang</button>
+        </div>
+      </div>
+      </div>
+        <center><a href="checkout.html" class="btn btn-warning"><h3>Lanjut ke Checkout</h3></a></center>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- end chocolate section -->
+
+
+ 
+
+
 
   <script>
     function addToCart(productName, productPrice) {
@@ -131,6 +237,291 @@
       alert(`${productName} berhasil ditambahkan ke keranjang!`);
     }
   </script>
+
+
+
+
+   <!-- client section -->
+
+   <section class="client_section">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-4 ml-auto">
+          <div class="img-box sub_img-box">
+            <img src="../static/images/client-chocolate.png" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6 px-0">
+          <div class="client_container">
+            <div class="heading_container">
+              <h2>
+                Testimoni
+              </h2>
+            </div>
+            <div id="customCarousel2" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="box">
+                    <div class="img-box">
+                      <img src="../static/images/client-img.jpg" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <h4>
+                        Randy Oktavian
+                      </h4>
+                      <p>
+                        ES Pisang Ijo dari tempat ini benar-benar luar biasa! Rasanya segar, manis, dan tekstur pisangnya sempurna. Saya akan terus datang untuk menikmati es ini setiap kali ingin yang segar-segar!
+                      </p>
+                      <i class="fa fa-quote-left" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="box">
+                    <div class="img-box">
+                      <img src="../static/images/client-img.jpg" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <h4>
+                        Rahma Fauzi
+                      </h4>
+                      <p>
+                        Saya pertama kali mencoba ES Pisang Ijo di sini, dan itu melebihi harapan saya! Rasa sirupnya pas, pisangnya kenyal, dan santannya kental banget. Sungguh pengalaman yang menyegarkan!
+                      </p>
+                      <i class="fa fa-quote-left" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="box">
+                    <div class="img-box">
+                      <img src="../static/images/client-img.jpg" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <h4>
+                        ATO MOSING
+                      </h4>
+                      <p>
+                        Saya tidak pernah tahu kalau ES Pisang Ijo bisa seenak ini! Setiap suapan benar-benar memanjakan lidah. Saya pasti akan merekomendasikan kepada teman-teman saya!
+                      </p>
+                      <i class="fa fa-quote-left" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel_btn-box">
+                <a class="carousel-control-prev" href="#customCarousel2" role="button" data-slide="prev">
+                  <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                  <span class="sr-only">Sebelumnya</span>
+                </a>
+                <a class="carousel-control-next" href="#customCarousel2" role="button" data-slide="next">
+                  <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                  <span class="sr-only">Berikutnya</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end client section -->
+
+
+<!-- contact section -->
+
+<section class="contact_section layout_padding">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-5 col-lg-4 offset-md-1 offset-lg-2">
+        <div class="form_container">
+          <div class="heading_container">
+            <h2>
+              Hubungi Kami
+            </h2>
+          </div>
+          <form action="">
+            <div>
+              <input type="text" placeholder="Nama Lengkap " />
+            </div>
+            <div>
+              <input type="text" placeholder="Nomor Telepon" />
+            </div>
+            <div>
+              <input type="email" placeholder="Email" />
+            </div>
+            <div>
+              <input type="text" class="message-box" placeholder="Pesan" />
+            </div>
+            <div class="d-flex ">
+              <button>
+                KIRIM SEKARANG
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-6  px-0">
+        <div class="map_container">
+          <div class="map">
+            <div id="googleMap"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- end contact section -->
+
+
+<!-- info section -->
+<section class="info_section layout_padding2">
+  <div class="container">
+    <div class="row info_form_social_row">
+      <div class="col-md-8 col-lg-9">
+        <div class="info_form">
+          <form action="">
+            <input type="email" placeholder="Masukkan email Anda">
+            <button>
+              <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-3">
+
+        <div class="social_box">
+          <a href="">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </a>
+          <a href="">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+          <a href="">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row info_main_row">
+      <div class="col-md-6 col-lg-3">
+        <div class="info_links">
+          <h4>
+            Menu
+          </h4>
+          <div class="info_links_menu">
+            <a href="/">
+              Beranda
+            </a>
+            <a href="/about">
+              Tentang Kami
+            </a>
+            <a href="/chocolate">
+              Pisang Ijo
+            </a>
+            <a href="/testimonial">
+              Testimoni
+            </a>
+            <a href="/contact">
+              Kontak Kami
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="info_insta">
+          <h4>
+            Instagram
+          </h4>
+          <div class="insta_box">
+            <div class="img-box">
+              <img src="../static/images/insta-img.png" alt="">
+            </div>
+            <p>
+              Foto produk Pisang Ijo terbaru
+            </p>
+          </div>
+          <div class="insta_box">
+            <div class="img-box">
+              <img src="../static/images/insta-img.png" alt="">
+            </div>
+            <p>
+              Nikmati rasa Pisang Ijo yang unik!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="info_detail">
+          <h4>
+            Perusahaan
+          </h4>
+          <p class="mb-0">
+            Kami menyajikan Pisang Ijo dengan rasa yang autentik dan kualitas terbaik. Kami berkomitmen untuk memberikan pengalaman kuliner yang tak terlupakan.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <h4>
+          Hubungi Kami
+        </h4>
+        <div class="info_contact">
+          <a href="">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            <span>
+              Lokasi
+            </span>
+          </a>
+          <a href="">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <span>
+              Telepon +01 1234567890
+            </span>
+          </a>
+          <a href="">
+            <i class="fa fa-envelope"></i>
+            <span>
+              espisangijojmbd@gmail.com
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- end info_section -->
+
+</div>
+
+<!-- footer section -->
+<footer class="container-fluid footer_section">
+<div class="container">
+  <div class="col-md-11 col-lg-8 mx-auto">
+    <p>
+      &copy; <span id="displayYear"></span> All Rights Reserved By
+      <a href="https://html.design/">HANGKER EPEP</a>
+    </p>
+  </div>
+</div>
+</footer>
+<!-- footer section -->
+<!-- jQery -->
+<script src="../static/js/jquery-3.4.1.min.js"></script>
+<!-- bootstrap js -->
+<script src="../static/js/bootstrap.js"></script>
+<!-- slick slider -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
+<!-- custom js -->
+<script src="../static/js/custom.js"></script>
+<!-- Google Map -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
+<!-- End Google Map -->
+
+
+</body>
 </body>
 
 </html>
